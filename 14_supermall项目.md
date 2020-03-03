@@ -58,7 +58,7 @@
       - bscroll.on('scroll',(position)=>{
       })
       - bscroll.on('pullingUp,()=>{})  上拉加载更多  bscroll.finishPullUp()
-    - better-scroll的封装：防止该插件不更新带来的麻烦，接触耦合，新建Scroll.vue组件
+    - better-scroll的封装：防止该插件不更新带来的麻烦，解除耦合，新建Scroll.vue组件
     - new BScroll(document.querySelector('.wrapper))  通过document.querySelector获取最外层元素不太好，因为可能有很多个wrapper，不知道拿到的是哪个
     - 可以通过ref="name"，绑定一个子组件，然后通过this.$refs.name获取该组件对象
       - 如果是绑定的一个普通的元素，然后通过this.$refs.name获取的是该元素
